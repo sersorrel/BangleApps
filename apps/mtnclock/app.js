@@ -370,9 +370,12 @@ function queueDraw() {
 queueDraw();
 readWeather();
 setWeather();
-Bangle.setUI("clock");
+Bangle.setUI("clockupdown", _ => {
+  Bangle.showLauncher();
+});
 
 if (data.showWidgets) {
   Bangle.loadWidgets();
   Bangle.drawWidgets();
 }
+

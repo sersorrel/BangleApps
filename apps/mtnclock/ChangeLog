@@ -2,3 +2,5 @@
 0.02: Get weather from weather.json
 0.03: Address unexpected undefined when reading weather.json
 0.04: Adding settings and the ability to show the widgets bar
+999.001: [dropped] show widgets
+999.002: show launcher on tap
