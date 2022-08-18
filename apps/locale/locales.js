@@ -71,7 +71,7 @@ var locales = {
     distance: { "0": "yd", "1": "mi" },
     temperature: '°C',
     ampm: { 0: "am", 1: "pm" },
-    timePattern: { 0: "%HH:%MM:%SS", 1: "%HH:%MM" },
+    timePattern: { 0: "%HH:%MM:%SS %P", 1: "%h:%MM %P" },
     datePattern: { 0: "%b %d %Y", 1: "%d/%m/%Y" }, // Feb 28 2020" // "01/03/2020"(short)
     abmonth: "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec",
     month: "January,February,March,April,May,June,July,August,September,October,November,December",
