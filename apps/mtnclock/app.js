@@ -194,7 +194,7 @@ g.clear();
 
   //clock text
   (color.clock == undefined) ? g.setColor(0xFFFF) : g.setColor(color.clock);
-  if (Bangle.isLocked) {
+  if (Bangle.isLocked()) {
     g.setFont("Vector", py(20)).setFontAlign(-1, -1).drawString((require("locale").time(new Date(), 1).replace(" ", "")), px(2), py(67));
   } else {
     g.setFont("Vector", py(15)).setFontAlign(-1, -1).drawString((require("locale").time(new Date(), 0).replace(" ", "")), px(2), py(67));

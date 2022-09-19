@@ -8,3 +8,4 @@
 999.004: show seconds
 999.005: only show seconds when display is on
 999.006: version bump
+999.007: fix seconds display
