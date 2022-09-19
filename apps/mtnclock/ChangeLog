@@ -9,3 +9,5 @@
 999.005: only show seconds when display is on
 999.006: version bump
 999.007: fix seconds display
+999.008: [dropped] add debug toggle to show redraw rate
+999.009: properly align text
