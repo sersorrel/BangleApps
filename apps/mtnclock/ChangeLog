@@ -7,3 +7,4 @@
 999.003: [dropped] hopefully reduce impact of drawWidgets memory leak
 999.004: show seconds
 999.005: only show seconds when display is on
+999.006: version bump
