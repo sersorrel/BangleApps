@@ -194,7 +194,7 @@ g.clear();
 
   //clock text
   (color.clock == undefined) ? g.setColor(0xFFFF) : g.setColor(color.clock);
-  g.setFont("Vector", py(20)).setFontAlign(-1, -1).drawString((require("locale").time(new Date(), 1).replace(" ", "")), px(2), py(67));
+  g.setFont("Vector", py(15)).setFontAlign(-1, -1).drawString((require("locale").time(new Date(), 0).replace(" ", "")), px(2), py(67));
   g.setFont("Vector", py(10)).drawString(require('locale').dow(new Date(), 1)+" "+new Date().getDate()+" "+require('locale').month(new Date(), 1)+((data.temp == undefined) ? "" : " | "+require('locale').temp(Math.round(data.temp-273.15)).replace(".0", "")), px(2), py(87));
 
   if (data.showWidgets) {

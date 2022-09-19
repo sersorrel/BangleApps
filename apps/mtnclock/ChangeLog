@@ -4,3 +4,5 @@
 0.04: Adding settings and the ability to show the widgets bar
 999.001: [dropped] show widgets
 999.002: show launcher on tap
+999.003: [dropped] hopefully reduce impact of drawWidgets memory leak
+999.004: show seconds
