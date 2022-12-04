@@ -487,7 +487,7 @@ let main = function(){
 
   g.clear();
 
-  Bangle.on('lock', DrawLock);
+  Bangle.on('lock', _ => load());
 
   //se c'è una chiamata in corso NON devo togliere niente dal next ( in q)
   setWatch(_=> next(), BTN1,{repeat: true});
