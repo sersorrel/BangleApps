@@ -5,3 +5,4 @@
 999.001: make icon look full when fully charged
 999.002: add charging symbol
 999.003: show green highlight when battery is full
+999.004: noop for rebase

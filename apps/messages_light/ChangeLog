@@ -11,3 +11,4 @@
 1.7: Fix removal notification from the list of current notifications
 999.001: on lock, just exit immediately
 999.002: don't exit on unlock
+999.003: noop for rebase
