@@ -1,6 +1,5 @@
 g.setBgColor(0, 0, 0);
 g.clear().flip();
-var imgbat = require("heatshrink").decompress(atob("nFYhBC/AH4A/AGUeACA22HEo3/G8YrTAC422HBQ2tHBI3/G/43/G/43/G/43/G/43/G/43/G+fTG+vSN+w326Q31GwI3/G9g2WG742CG/43rGwY3yGwg33RKo3bNzQ3bGwo3/G9A2GG942dG/43QGw43uGxA34IKw3VGyY3iG0I3pb8pBRG+wYPG8wYQG/42uG8oZSG/43bDKY3iDKg3cNzI3iRKo3gGyo3/G7A2WG7g2aG/43WGzA3dGzI3/G6fTGzRvcG/43/G/43/G/43/G/43/G/43/G/437HFw2IHFo2KAH4A/AH4Aa"));
 var imgbubble = require("heatshrink").decompress(atob("i0UhAebgoAFCaYXNBocjAAIWNCYoVHCw4UFIZwqELJQWFKZQVOChYVzABwVaCx7wKCqIWNCg4WMChIXJCZgAnA=="));
 
 var W=g.getWidth(),H=g.getHeight();
@@ -25,12 +24,12 @@ function anim() {
       f.y=0;
     g.drawImage(imgbubble,f.y,f.x,{scale:f.s * b2scale, rotate:b2rot});
   });
-  g.drawImage(imgbat, mx,my,{scale:b2scale, rotate:Math.sin(getTime()*2)*0.5-Math.PI/2 + b2rot});
   g.flip();
 }
 
 setInterval(anim,20);
 
 Bangle.on("charging", isCharging => {
+  Bangle.setBacklight(1);
   if (!isCharging) load();
 });
