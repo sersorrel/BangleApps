@@ -1,7 +1,7 @@
 {
   "id": "chargeanim",
   "name": "Charge Animation",
-  "version": "999.001",
+  "version": "999.002",
   "description": "When charging, show a sideways charging animation and keep the screen on. When removed from the charger load the clock again.",
   "icon": "icon.png",
   "tags": "battery",

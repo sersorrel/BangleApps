@@ -31,5 +31,10 @@ setInterval(anim,20);
 
 Bangle.on("charging", isCharging => {
   Bangle.setBacklight(1);
-  if (!isCharging) load();
+  if (!isCharging) {
+    let settings = require("Storage").readJSON("setting.json", true) || {};
+    settings.quiet = 0;
+    require("Storage").writeJSON("setting.json", settings);
+    load();
+  }
 });
