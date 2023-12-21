@@ -2,3 +2,4 @@
 0.02: Bangle.js 2 compatibility
 999.001: improvements
 999.002: enable quiet mode on charger
+999.003: revert quiet mode changes
